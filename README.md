@@ -1,7 +1,9 @@
 # Gmail-Spam-Workflow   
 
 This workflow ping the Google's imap server first. If the server is the alive, then the operator connects to a user's gmail account 
-to retrieve messages flagged by Google as spam messages. 
+to retrieve messages flagged by Google as spam messages and non-spam messages. 
+
+Next it passes the retrieved messages to a trained Naive Bayes model for spam classification.
 
 ## Installation   
 
