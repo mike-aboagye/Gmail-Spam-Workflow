@@ -40,3 +40,17 @@ The command below starts the scheduler.
 ```python
 airflow scheduler 
 ```
+
+## Task For Gmail-Spam-Workflow    
+
+- ping_imap_server:   
+      
+      The `ping_imap_server` task is to ping the imap server to check whether it is alive or not.    
+      
+- get_recent_spam:   
+
+      The `get_recent_spam` task is to login and retrieve recent spam and non-spam messages from a user's gmail account 
+      
+- naive_classifier:   
+
+      The `native-classifier` task takes a spam or non-spam message as input and display whether the message is spam or not.
